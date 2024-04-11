@@ -1,12 +1,12 @@
-<input type="number" name="" id="edadUno" [(ngModel)]="edadUno" placeholder="Ingresar Edad 1">
-<input type="number" name="" id="edadDos" [(ngModel)]="edadDos" placeholder="Ingresar Edad 2">
-
-<button (click)="calcular()">
-    Calcular
-</button>
-<button (click)="limpiar()">
-    Limpiar Form
-</button>
-
-<label for="promedio">Promedio: {{ promedio }}</label>
-<label for="suma">Suma: {{ suma }}</label>
+<div class="calculator">
+    <input type="number" id="edadUno" [(ngModel)]="edadUno" placeholder="Ingresar Edad 1">
+    <input type="number" id="edadDos" [(ngModel)]="edadDos" placeholder="Ingresar Edad 2">
+  
+    <button (click)="calcular()">Calcular</button>
+    <button (click)="limpiar()">Limpiar Form</button>
+  
+    <div class="results">
+      <label for="promedio">Promedio: {{ promedio }}</label>
+      <label for="suma">Suma: {{ suma }}</label>
+    </div>
+  </div>
