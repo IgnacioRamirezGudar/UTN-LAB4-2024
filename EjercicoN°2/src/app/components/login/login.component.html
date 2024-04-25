@@ -1,0 +1,38 @@
+<div class="container">
+    <form class="form-container" [formGroup]="logForm" novalidate>
+      <div class="text-center mb-3">
+        <p class="title">LOGUEARSE</p>
+      </div>
+  
+      <!-- Email input -->
+      <div data-mdb-input-init class="form-outline mb-4">
+        <label class="form-label" for="loginName">Email</label>
+        <input type="email" id="loginName" class="form-control" formControlName = "email" placeholder="Ingrese email del usuario"/>
+
+      </div>
+  
+      <!-- Password input -->
+      <div data-mdb-input-init class="form-outline mb-4">
+        <label class="form-label" for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" class="form-control" formControlName = "password" placeholder="Ingrese una contraseña"/>
+      </div>
+  
+      <!-- Submit button -->
+      <button
+        type="submit"
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-primary btn-block mb-4"
+        (click)="login()"
+      >
+        INGRESAR
+      </button>
+  
+      <!-- Register buttons -->
+      <!--<div class="text-center">
+          <p>Not a member? <a href="#!">Register</a></p>
+        </div>-->
+    </form>
+</div>
+
+<router-outlet></router-outlet>

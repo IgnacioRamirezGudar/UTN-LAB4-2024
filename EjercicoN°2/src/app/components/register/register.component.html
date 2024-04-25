@@ -1,0 +1,33 @@
+<div class="container">
+    <form class="register-container" [formGroup]="regForm" novalidate>
+        <div class="text-center mb-3">
+          <p class="title">REGISTRARSE</p>
+        </div>
+    
+        <!-- Name input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="registerName">Name</label>
+            <input type="text" id="registerName" class="form-control" formControlName = "fullname" placeholder="Ingrese nombre de usuario"/>
+        </div>
+    
+        <!-- Email input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="registerEmail">Email</label>
+          <input type="email" id="registerEmail" class="form-control" formControlName = "email" placeholder="Ingrese un email"/>
+          
+        </div>
+    
+        <!-- Password input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="registerPassword">Password</label>
+          <input type="password" id="registerPassword" class="form-control" formControlName = "password" placeholder="Ingrese una contraseña"/>
+         
+        </div>
+    
+        <!-- Submit button -->
+        <button type="submit" (click)="signUp()" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-3">INGRESAR</button>
+      </form>    
+</div>
+
+
+<router-outlet></router-outlet>

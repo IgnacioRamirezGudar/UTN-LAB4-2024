@@ -1,0 +1,22 @@
+<body>
+    <div class="container">
+        <div class="left-links">
+            <a routerLink="/" class="inicioo">Inicio</a>
+        </div>
+        
+        <div class="right-links">
+            <a routerLink="/login">Iniciar sesión</a>
+            <a routerLink="/register">Registrarte</a>
+        </div>
+    </div>
+
+    <div class="container2" *ngIf="showContainer2">
+        <div class="circle">
+          <div class="text">Bienvenido!!!</div>
+        </div>
+    </div>
+
+    <router-outlet></router-outlet>
+</body>
+
+

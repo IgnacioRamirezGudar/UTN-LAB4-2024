@@ -1,0 +1,26 @@
+<body>
+    <div class="container">
+        <div class="right-links">
+            <a routerLink="category-profile">Profile</a>
+            <button
+            type="submit"
+            data-mdb-button-init
+            data-mdb-ripple-init
+            class="btn btn-primary btn-block mb-4"
+            (click)="logout()"
+          >
+            SALIR
+          </button>
+        </div>
+    </div>
+
+    <div class="container2" *ngIf="showContainer2">
+        <div class="circle">
+          <div class="text">Bienvenido a HOME!!!</div>
+        </div>
+    </div>
+
+    <router-outlet></router-outlet>
+</body>
+
+
